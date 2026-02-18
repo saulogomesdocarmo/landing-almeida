@@ -1,7 +1,6 @@
 /* ===================== */
 /* RESET */
 /* ===================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,19 +9,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #dcdcdc; /* fundo geral (mais escuro) */
+    background-color: #dcdcdc;
 }
 
 /* ===================== */
 /* WRAPPER GERAL */
 /* ===================== */
-
 .site-wrapper {
     width: 95%;
     max-width: 1250px;
-    margin: 60px auto;
-    background-color: #f9f9f9; /* cor mais clara para destacar */
-    padding: 60px 0;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    padding: 40px 0;
     border-radius: 16px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
@@ -30,25 +28,13 @@ body {
 /* ===================== */
 /* SECTIONS */
 /* ===================== */
-
 section {
-    padding: 70px 0;
-}
-
-/* ===================== */
-/* CONTAINER INTERNO */
-/* ===================== */
-
-.container {
-    width: 85%;
-    max-width: 1100px;
-    margin: 0 auto;
+    padding: 50px 0;
 }
 
 /* ===================== */
 /* HEADER */
 /* ===================== */
-
 .header {
     background-color: #111;
     padding: 15px 0;
@@ -86,7 +72,6 @@ section {
 /* ===================== */
 /* TÍTULOS */
 /* ===================== */
-
 section h2 {
     text-align: center;
     font-size: 30px;
@@ -96,18 +81,16 @@ section h2 {
 /* ===================== */
 /* FACHADA (FULL WIDTH) */
 /* ===================== */
-
 .fachada {
     position: relative;
-    height: 600px;
-    background: url("/img/banner-01.jpg") center center / cover no-repeat;
+    min-height: 60vh;
+    background: url("../img/banner-01.jpg") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-left: 80px;
 }
 
-/* escurece imagem */
 .fachada::before {
     content: "";
     position: absolute;
@@ -127,12 +110,14 @@ section h2 {
 }
 
 .btn-banner {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     padding: 14px 30px;
     background-color: #ff6600;
-    border: none;
+    border-radius: 6px;
     color: #fff;
     font-size: 16px;
-    border-radius: 6px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -144,7 +129,6 @@ section h2 {
 /* ===================== */
 /* CARDS */
 /* ===================== */
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -173,14 +157,15 @@ section h2 {
 /* ===================== */
 /* BOTÕES */
 /* ===================== */
-
 .btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     padding: 10px 20px;
-    border: none;
+    border-radius: 5px;
     background-color: #ff6600;
     color: #fff;
     cursor: pointer;
-    border-radius: 5px;
     transition: 0.3s;
 }
 
@@ -191,7 +176,6 @@ section h2 {
 /* ===================== */
 /* FOOTER */
 /* ===================== */
-
 .footer {
     background-color: #111;
     color: #fff;
@@ -202,7 +186,6 @@ section h2 {
 /* ===================== */
 /* RESPONSIVO */
 /* ===================== */
-
 @media (max-width: 768px) {
 
     .nav {
@@ -216,13 +199,13 @@ section h2 {
     }
 
     .fachada {
-        height: 500px;
+        min-height: 50vh;
         padding-left: 40px;
     }
 
     .site-wrapper {
         width: 100%;
-        margin: 40px auto;
-        border-radius: 0;
+        margin: 20px auto;
+        border-radius: 8px;
     }
 }
